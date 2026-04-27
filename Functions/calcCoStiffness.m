@@ -28,7 +28,7 @@ function Gx = calcCoStiffness (Kx)
 % oscillations or instability that may arise from high stiffness values
 % alone.
 %
-% Copyright 2024 The MathWorks, Inc.
+
 
     Gx = 0.5*trace(Kx)*eye(3) - Kx;
 end
