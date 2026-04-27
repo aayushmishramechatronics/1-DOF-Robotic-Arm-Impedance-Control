@@ -1,3 +1,8 @@
+Authors
+1) Aayush Anil Mishra
+2) Florin Nae
+3) Abhishek Kumar Kashyap
+
 ## What is Impedance Control for a robotic arm?
 
 * A technique used in robotics to regulate the interaction forces between a robotic arm and its environment. Instead of directly controlling the position or velocity of the robotic arm's end-effector (e.g., gripper), impedance control focuses on controlling the stiffness and damping of the arm's motion, mimicking the behavior of a mechanical spring-damper system.
