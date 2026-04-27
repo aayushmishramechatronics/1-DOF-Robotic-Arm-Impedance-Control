@@ -1,12 +1,3 @@
-# Impedance Control of a Robotic Manipulator [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=mathworks/Robotic-Arm-Impedance-Control&file=https://github.com/mathworks/Robotic-Arm-Impedance-Control/blob/main/KinovaGen3_CartesianImpedanceCtrl.prj)
-
-ロボットマニピュレータのインピーダンス制御
-
-## Contents
-
-We are entering an era where robots will work alongside humans. This project showcases an impedance control strategy for robotic manipulators that operate in such collaborative scenarios. 
-We will briefly introduce the reader to the still-active area of research of robotic impedance control, and then show a simple implementation of an impedance controller that can safely operate a Kinova<sup>®</sup> Gen3 robotic arm close to a soft viscoelastic material resembling a human body.
-
 ## What is Impedance Control for a robotic arm?
 
 * A technique used in robotics to regulate the interaction forces between a robotic arm and its environment. Instead of directly controlling the position or velocity of the robotic arm's end-effector (e.g., gripper), impedance control focuses on controlling the stiffness and damping of the arm's motion, mimicking the behavior of a mechanical spring-damper system.
@@ -16,14 +7,6 @@ We will briefly introduce the reader to the still-active area of research of rob
 * The algorithm implementation is straightforward and relatively easy to tune, making it a good alternative compared to traditional control methods (for other control alternatives, refer to the **Appendix** below).
 
 * For an n-DOF robotic manipulator, the cartesian impedance controller is physically described as a multidimensional **virtual spring** that attempts to co-align the robot end-effector pose to a desired pose configuration. In addition to the virtual spring, in order to achieve a satisfactory dynamic behavior and guarantee a robust asymptotic stability, damping is also injected into the system via a joint space damper on each DOF.
-
-* ロボット工学において、ロボットアームとその環境との間の相互作用力を調整するために使用される技術。ロボットアームのエンドエフェクタ（グリッパなど）の位置や速度を直接制御する代わりに、インピーダンス制御は、機械的なバネ・ダンパーシステムの挙動を模倣して、アームの動きの剛性と減衰を制御することに重点を置く。
-
-* ロボットアームの汎用性と適応性を高め、ダイナミックで不確実な環境でも効果的に動作させ、物体や人間との安全で効率的なインタラクションを実現します。今回のデモで使用されている最も単純な実装では、制御ループで使用されるフィードバック信号は、エンドエフェクタの姿勢、関節の位置と速度のみです。接触力、圧力変換器、トルクセンサーを使用しないため、この手法は動作する環境に対して「不可知」であり、不確実性に対してロバストである。
-
-* アルゴリズムの実装は簡単で、チューニングも比較的容易であるため、従来の制御方法（他の制御方法については、以下の付録を参照）に比べて優れた代替方法となる。
-
-* n自由度ロボットマニピュレータの場合、デカルトインピーダンスコントローラは、ロボットのエンドエフェクタの姿勢を所望の姿勢構成に整列させようとする多次元仮想バネとして物理的に記述されます。仮想バネに加えて、満足のいく動的挙動を達成し、ロバストな漸近安定性を保証するために、各自由度の関節空間ダンパを介してシステムに減衰も注入されます。
 
 ![plot](./images/ImpedanceControl.png)
 
@@ -87,11 +70,6 @@ MathWorks<sup>®</sup> products needed to run the simulation are listed below:
 ## License
 
 The license is available in the LICENSE.txt file in this GitHub repository.
-
-## Authors
-
-* **[Florin Nae](mailto:fnae@mathworks.com)**  
-* **[Tadele Shiferaw](mailto:tshifera@mathworks.com)**  
 
 ## Appendix: An overview of control algorithms used for a robot arm
 
