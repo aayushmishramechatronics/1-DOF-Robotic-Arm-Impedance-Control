@@ -1,8 +1,4 @@
-Authors
-1) Aayush Anil Mishra
-2) Florin Nae
-3) Abhishek Kumar Kashyap
-4) Tadele Shiferaw
+
 
 ## What is Impedance Control for a robotic arm?
 
